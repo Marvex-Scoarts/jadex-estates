@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JADEX ESTATES | Luxury Real Estate &amp; Architectural Properties</title>
+  <!-- Custom JE Architectural Monogram Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://w3.org' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23102027'/><text x='50' y='66' font-family='Georgia, serif' font-size='44' font-weight='bold' fill='%23D4AF37' text-anchor='middle'>JE</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">JADEX ESTATES</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#listings">Properties</a></li>
+        <li><a href="#agents">Advisors</a></li>
+        <li><a href="#about">Our Standard</a></li>
+        <li><a href="#saved" class="saved-homes-btn">Saved Homes (0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Property Search Bar -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-tag">CURATED ARCHITECTURAL RESIDENCES</span>
+      <h1>Find Your Signature Sanctuary</h1>
+      <p>Discover waterfront villas, sky penthouses, and modern smart homes across Lagos's most prestigious neighborhoods.</p>
+
+      <!-- Property Search Bar -->
+      <div class="search-bar">
+        <select id="locationFilter">
+          <option value="all">All Locations</option>
+          <option value="Banana Island">Banana Island</option>
+          <option value="Ikoyi">Ikoyi</option>
+          <option value="Lekki Phase 1">Lekki Phase 1</option>
+          <option value="Victoria Island">Victoria Island</option>
+        </select>
+
+        <select id="typeFilter">
+          <option value="all">All Property Types</option>
+          <option value="Villa">Waterfront Villa</option>
+          <option value="Penthouse">Sky Penthouse</option>
+          <option value="Duplex">Modern Duplex</option>
+        </select>
+
+        <a href="#listings" class="btn primary-btn" id="searchTriggerBtn">Search Properties</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Property Listings -->
+  <section id="listings" class="listings-section">
+    <div class="section-header">
+      <span class="sub-tag">EXCLUSIVE PORTFOLIO</span>
+      <h2>Featured Residences</h2>
+      <p>Hand-inspected luxury properties available for private viewing</p>
+    </div>
+
+    <div class="listings-grid" id="listingsGrid">
+      <!-- Property 1 -->
+      <article class="property-card" data-location="Banana Island" data-type="Villa">
+        <div class="property-img">
+          <img src="villa.jpg" alt="The Sapphire Waterfront Villa">
+          <span class="status-tag">FOR SALE</span>
+          <span class="price-tag">$2,850,000</span>
+        </div>
+        <div class="property-body">
+          <span class="location-label">Banana Island, Ikoyi</span>
+          <h3>The Sapphire Waterfront Villa</h3>
+          <div class="specs-row">
+            <span>5 Beds</span>
+            <span>&bull;</span>
+            <span>6 Baths</span>
+            <span>&bull;</span>
+            <span>720 sqm</span>
+          </div>
+          <p class="property-desc">Private jetty access, infinity lap pool, cinema lounge, and floor-to-ceiling lagoon views.</p>
+          <div class="card-actions">
+            <button class="btn details-btn" data-title="The Sapphire Waterfront Villa" data-price="$2,850,000" data-loc="Banana Island, Ikoyi" data-specs="5 Beds • 6 Baths • 720 sqm • Private Jetty & Pool">View Details</button>
+            <button class="btn save-home-btn" data-home="The Sapphire Waterfront Villa ($2.85M)">&#9825;</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Property 2 -->
+      <article class="property-card" data-location="Ikoyi" data-type="Penthouse">
+        <div class="property-img">
+          <img src="penthouse.jpg" alt="Skyline Glass Penthouse">
+          <span class="status-tag">NEW LISTING</span>
+          <span class="price-tag">$1,650,000</span>
+        </div>
+        <div class="property-body">
+          <span class="location-label">Old Ikoyi, Lagos</span>
+          <h3>Skyline Glass Penthouse</h3>
+          <div class="specs-row">
+            <span>4 Beds</span>
+            <span>&bull;</span>
+            <span>5 Baths</span>
+            <span>&bull;</span>
+            <span>510 sqm</span>
+          </div>
+          <p class="property-desc">Wrap-around sunset terrace, private elevator foyer, Italian marble kitchen, and smart automation.</p>
+          <div class="card-actions">
+            <button class="btn details-btn" data-title="Skyline Glass Penthouse" data-price="$1,650,000" data-loc="Old Ikoyi, Lagos" data-specs="4 Beds • 5 Baths • 510 sqm • Private Elevator & Terrace">View Details</button>
+            <button class="btn save-home-btn" data-home="Skyline Glass Penthouse ($1.65M)">&#9825;</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Property 3 -->
+      <article class="property-card" data-location="Lekki Phase 1" data-type="Duplex">
+        <div class="property-img">
+          <img src="palm-grove.jpg" alt="Palm Grove Modern Duplex">
+          <span class="status-tag">FEATURED</span>
+          <span class="price-tag">$920,000</span>
+        </div>
+        <div class="property-body">
+          <span class="location-label">Lekki Phase 1, Lagos</span>
+          <h3>Palm Grove Modern Duplex</h3>
+          <div class="specs-row">
+            <span>5 Beds</span>
+            <span>&bull;</span>
+            <span>5 Baths</span>
+            <span>&bull;</span>
+            <span>460 sqm</span>
+          </div>
+          <p class="property-desc">Double-volume living atrium, landscaped courtyard pool, solar microgrid, and gated security.</p>
+          <div class="card-actions">
+            <button class="btn details-btn" data-title="Palm Grove Modern Duplex" data-price="$920,000" data-loc="Lekki Phase 1, Lagos" data-specs="5 Beds • 5 Baths • 460 sqm • Courtyard Pool & Solar">View Details</button>
+            <button class="btn save-home-btn" data-home="Palm Grove Modern Duplex ($920K)">&#9825;</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Property 4 -->
+      <article class="property-card" data-location="Victoria Island" data-type="Penthouse">
+        <div class="property-img">
+          <img src="aurelia.jpg" alt="The Aurelia Oceanfront Residence">
+          <span class="status-tag">EXCLUSIVE</span>
+          <span class="price-tag">$1,980,000</span>
+        </div>
+        <div class="property-body">
+          <span class="location-label">Victoria Island, Lagos</span>
+          <h3>The Aurelia Oceanfront Suite</h3>
+          <div class="specs-row">
+            <span>4 Beds</span>
+            <span>&bull;</span>
+            <span>4.5 Baths</span>
+            <span>&bull;</span>
+            <span>580 sqm</span>
+          </div>
+          <p class="property-desc">Panoramic Atlantic Ocean views, residents' sky lounge, concierge valet, and wellness spa.</p>
+          <div class="card-actions">
+            <button class="btn details-btn" data-title="The Aurelia Oceanfront Suite" data-price="$1,980,000" data-loc="Victoria Island, Lagos" data-specs="4 Beds • 4.5 Baths • 580 sqm • Atlantic Ocean View">View Details</button>
+            <button class="btn save-home-btn" data-home="The Aurelia Oceanfront Suite ($1.98M)">&#9825;</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Property 5 -->
+      <article class="property-card" data-location="Victoria Island" data-type="Penthouse">
+        <div class="property-img">
+          <img src="duplex.jpg" alt="Twin Duplex">
+          <span class="status-tag">NEW LISTING</span>
+          <span class="price-tag">$1,270,000</span>
+        </div>
+        <div class="property-body">
+          <span class="location-label">Victoria Island, Lagos</span>
+          <h3>Twin Duplex</h3>
+          <div class="specs-row">
+            <span>4 Beds</span>
+            <span>&bull;</span>
+            <span>4.5 Baths</span>
+            <span>&bull;</span>
+            <span>580 sqm</span>
+          </div>
+          <p class="property-desc">Modern twin duplex offering panoramic Atlantic Ocean views, residents' sky lounge, concierge valet, and wellness spa.</p>
+          <div class="card-actions">
+            <button class="btn details-btn" data-title="Twin Duplex" data-price="$1,270,000" data-loc="Victoria Island, Lagos" data-specs="4 Beds • 4.5 Baths • 580 sqm • Atlantic Ocean View">View Details</button>
+            <button class="btn save-home-btn" data-home="Twin Duplex ($1.27M)">&#9825;</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Property 6 -->
+      <article class="property-card" data-location="Victoria Island" data-type="Penthouse">
+        <div class="property-img">
+          <img src="bungalow.jpg" alt="3 Bedroom Duplex Bungalow">
+          <span class="status-tag">FOR SALE</span>
+          <span class="price-tag">$1,320,000</span>
+        </div>
+        <div class="property-body">
+          <span class="location-label">Victoria Island, Lagos</span>
+          <h3>3 Bedroom Duplex Bungalow</h3>
+          <div class="specs-row">
+            <span>4 Beds</span>
+            <span>&bull;</span>
+            <span>4.5 Baths</span>
+            <span>&bull;</span>
+            <span>580 sqm</span>
+          </div>
+          <p class="property-desc">Spacious 3-bedroom duplex bungalow featuring panoramic Atlantic Ocean views, residents' sky lounge, concierge valet, and a wellness spa.</p>
+          <div class="card-actions">
+            <button class="btn details-btn" data-title="3 Bedroom Bungalow Duplex" data-price="$1,320,000" data-loc="Victoria Island, Lagos" data-specs="4 Beds • 4.5 Baths • 580 sqm • Atlantic Ocean View">View Details</button>
+            <button class="btn save-home-btn" data-home="3 Bedroom Bungalow Duplex ($1.32M)">&#9825;</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Agent Profiles Section -->
+  <section id="agents" class="agents-section">
+    <div class="section-header">
+      <span class="sub-tag">PRIVATE ADVISORY</span>
+      <h2>Meet Our Senior Advisors</h2>
+    </div>
+
+    <div class="agents-grid">
+      <div class="agent-card">
+        <div class="agent-avatar">MS</div>
+        <h3>Marvex Scoarts</h3>
+        <span class="agent-role">Managing Partner &bull; Waterfront Estates</span>
+        <p class="agent-stat">$68M+ in Closed Luxury Sales</p>
+        <button class="btn outline-dark-btn book-tour-btn" data-agent="Marvex Scoarts">Schedule Private Tour</button>
+      </div>
+
+      <div class="agent-card">
+        <div class="agent-avatar">RS</div>
+        <h3>Remmy Scoarts</h3>
+        <span class="agent-role">Director of Penthouses &amp; Smart Homes</span>
+        <p class="agent-stat">12 Years Architectural Advisory</p>
+        <button class="btn outline-dark-btn book-tour-btn" data-agent="Remmy Scoarts">Schedule Private Tour</button>
+      </div>
+
+      <div class="agent-card">
+        <div class="agent-avatar">MO</div>
+        <h3>Maxwell Obianyi</h3>
+        <span class="agent-role">International Buyer Specialist</span>
+        <p class="agent-stat">Bespoke Relocation &amp; Portfolio Concierge</p>
+        <button class="btn outline-dark-btn book-tour-btn" data-agent="Maxwell Obianyi">Schedule Private Tour</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Standard Banner -->
+  <section id="about" class="standard-banner">
+    <div class="standard-content">
+      <h2>Architectural Excellence, Discreetly Delivered</h2>
+      <p>Every property in the Jadex Estates collection undergoes a 50-point structural, legal, and design audit before reaching our private portfolio.</p>
+    </div>
+  </section>
+
+<!-- Overlay -->
+  <div class="je-overlay" id="jeOverlay"></div>
+
+  <!-- Saved Homes Drawer -->
+  <aside class="homes-drawer" id="homesDrawer">
+    <div class="je-drawer-head">
+      <h3>SAVED HOMES</h3>
+      <button class="je-close" id="closeHomesBtn">&times;</button>
+    </div>
+    <div class="je-drawer-body" id="savedHomesList">
+      <p style="color:#5C6662; text-align:center; margin-top:2rem;">No properties shortlisted yet. Click the heart icon on any residence!</p>
+    </div>
+  </aside>
+
+  <!-- Property Details & Private Tour Modal -->
+  <div class="je-modal" id="jeModal">
+    <div class="je-modal-header">
+      <button class="je-close" id="closeJeModalBtn" style="position:absolute; top:1rem; right:1.2rem;">&times;</button>
+      <span id="modalSubTag">PRIVATE RESIDENCE DOSSIER</span>
+      <h3 id="modalHeading">The Sapphire Waterfront Villa</h3>
+    </div>
+    <div class="je-modal-content">
+      <div class="je-specs-box" id="modalSpecsBox"></div>
+      <form class="je-tour-form" id="privateTourForm">
+        <input type="text" id="clientTourName" placeholder="Your Full Name" required>
+        <input type="date" required>
+        <button type="submit" class="btn primary-btn" style="width:100%;">Request Private Viewing</button>
+        <div class="je-confirm-banner" id="tourConfirmBanner"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 JADEX ESTATES. Luxury Real Estate &amp; Architectural Advisory.</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
